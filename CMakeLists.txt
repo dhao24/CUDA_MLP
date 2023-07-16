@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
+set(CMAKE_CUDA_ARCHITECTURES 50)
 set(CMAKE_CUDA_COMPILER /usr/local/cuda/bin/nvcc)
 
 project( cuda_mlp LANGUAGES CUDA CXX )

@@ -19,7 +19,7 @@ int main() {
 	CoordinatesDataset dataset(100, 21);
 	BCECost bce_cost;
 
-	NeuralNetwork nn;
+	NeuralNetwork nn(0.1);
 	nn.addLayer(new LinearLayer("linear_1", Shape(2, 30)));
 	nn.addLayer(new ReLUActivation("relu_1"));
 	nn.addLayer(new LinearLayer("linear_2", Shape(30, 1)));
